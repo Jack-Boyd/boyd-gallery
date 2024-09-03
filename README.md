@@ -7,7 +7,8 @@
 - [x] Tidy up build process
 - [x] Actually set up a database
 - [x] Attach database to UI
-- [ ] Add auth
+- [x] Add auth
+- [ ] "taint" (server only)
 - [ ] Add image upload
 - [ ] Error mngmnt
 - [ ] Routing/image page
