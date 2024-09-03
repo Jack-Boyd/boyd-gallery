@@ -9,6 +9,7 @@
 - [x] Attach database to UI
 - [x] Add auth
 - [ ] "taint" (server only)
+- [ ] Use Next/Image component
 - [ ] Add image upload
 - [ ] Error mngmnt
 - [ ] Routing/image page
