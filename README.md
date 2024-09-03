@@ -8,9 +8,10 @@
 - [x] Actually set up a database
 - [x] Attach database to UI
 - [x] Add auth
+- [x] Add image upload
+- [x] Add userid to images
 - [ ] "taint" (server only)
 - [ ] Use Next/Image component
-- [ ] Add image upload
 - [ ] Error mngmnt
 - [ ] Routing/image page
 - [ ] Delete button
