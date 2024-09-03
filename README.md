@@ -10,7 +10,7 @@
 - [x] Add auth
 - [x] Add image upload
 - [x] Add userid to images
-- [ ] "taint" (server only)
+- [x] "taint" (server only)
 - [ ] Use Next/Image component
 - [ ] Error mngmnt
 - [ ] Routing/image page
