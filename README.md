@@ -12,7 +12,7 @@
 - [x] Add userid to images
 - [x] "taint" (server only)
 - [x] Use Next/Image component
-- [ ] Error mngmnt
+- [x] Error mngmnt
 - [ ] Routing/image page
 - [ ] Delete button
 - [ ] Analytics
