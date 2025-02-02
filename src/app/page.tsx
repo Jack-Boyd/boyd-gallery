@@ -29,7 +29,7 @@ export default async function HomePage() {
   return (
     <main className="max-w-6xl mx-auto">
       <SignedOut>
-        <div className="h-full w-full text-2xl text-center">Please sign in to view the gallery.</div>
+        <div className="h-full w-full text-2xl text-center">Please sign in to view gallery</div>
       </SignedOut>
       <SignedIn>
         <Images />
