@@ -4,6 +4,7 @@ import "@uploadthing/react/styles.css";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
+import { PostHogProvider } from "./_analytics/provider";
 import { TopNav } from "./_components/topnav";
 import { Toaster } from "sonner";
 
@@ -19,15 +20,17 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode; modal: React.ReactNode }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${GeistSans.variable} dark`}>
-        <body className="flex flex-col gap-4">
-          <TopNav />
-          {children}
-          {modal}
-          <div id="modal-root" />
-          <Toaster />
-        </body>
-      </html>
+      <PostHogProvider>
+        <html lang="en" className={`${GeistSans.variable} dark`}>
+          <body className="flex flex-col gap-4">
+            <TopNav />
+            {children}
+            {modal}
+            <div id="modal-root" />
+            <Toaster />
+          </body>
+        </html>
+      </PostHogProvider>
     </ClerkProvider>
   );
 }
