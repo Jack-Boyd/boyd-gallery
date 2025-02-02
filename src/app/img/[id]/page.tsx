@@ -1,5 +1,5 @@
 import { getImage } from "~/server/queries";
-import FullPageImageView from "~/components/full-page-image";
+import FullPageImageView from "~/common/full-page-image";
 
 export default async function PhotoPage({ params }: { params: { id: string } }) {
   const { id } = await params;

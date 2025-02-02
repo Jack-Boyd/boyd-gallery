@@ -5,6 +5,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { TopNav } from "./_components/topnav";
+import { Toaster } from "sonner";
 
 export const metadata: Metadata = {
   title: "Boyd Gallery",
@@ -18,12 +19,15 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode; modal: React.ReactNode }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className={`${GeistSans.variable}`}>
+      <html lang="en" className={`${GeistSans.variable} dark`}>
         <body className="flex flex-col gap-4">
-          <TopNav />
-          {children}
-          {modal}
+          <div className="grid h-screen grid-rows-[auto,1fr]">
+            <TopNav />
+            <main className="overflow-y-scroll">{children}</main>
+            {modal}
+          </div>
           <div id="modal-root" />
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>

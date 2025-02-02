@@ -8,23 +8,21 @@ async function Images() {
   const images = await getImages();
   
   return (
-    <main className="">
-      <div className="flex flex-wrap justify-center gap-4">
-        {images.map((image) => (
-          <div key={image.id} className="flex items-center justify-center h-64 w-48">
-            <Link className="h-64 w-48" href={`/img/${image.id}`}>
-              <Image 
-                src={image.url} 
-                width={192} 
-                height={192} 
-                alt={image.name} 
-                className="h-full w-full object-cover"
-              />
-            </Link>
-          </div>
-        ))}
-      </div>
-    </main>
+    <div className="flex flex-wrap justify-center gap-4">
+      {images.map((image) => (
+        <div key={image.id} className="flex items-center justify-center h-64 w-48">
+          <Link className="h-64 w-48" href={`/img/${image.id}`}>
+            <Image 
+              src={image.url} 
+              width={192} 
+              height={192} 
+              alt={image.name} 
+              className="h-full w-full object-cover"
+            />
+          </Link>
+        </div>
+      ))}
+    </div>
   );
 }
 export default async function HomePage() {
