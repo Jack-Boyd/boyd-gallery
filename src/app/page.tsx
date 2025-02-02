@@ -27,7 +27,7 @@ async function Images() {
 }
 export default async function HomePage() {
   return (
-    <main className="">
+    <main className="max-w-6xl mx-auto">
       <SignedOut>
         <div className="h-full w-full text-2xl text-center">Please sign in to view the gallery.</div>
       </SignedOut>

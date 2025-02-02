@@ -21,11 +21,9 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" className={`${GeistSans.variable} dark`}>
         <body className="flex flex-col gap-4">
-          <div className="grid h-screen grid-rows-[auto,1fr]">
-            <TopNav />
-            <main className="overflow-y-scroll">{children}</main>
-            {modal}
-          </div>
+          <TopNav />
+          {children}
+          {modal}
           <div id="modal-root" />
           <Toaster />
         </body>
